@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+
+    {{ form_label(form.name)}}
+    {{ form_widget(form.name) }}
+     <div class="error w-50 m-1" style="font-size:10px;color:#f73123;">{{ form_errors(form.name)}}</div>
+
+    <button class="btn btn-success m-3">{{ button_label|default('Enregistrer') }}</button>
+    
+{{ form_end(form) }}
